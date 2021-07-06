@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
-  resources :tracks
-  resources :tunings
+  scope "/api/v1" do
+    resources :tracks
+    resources :tunings
+  end
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end
