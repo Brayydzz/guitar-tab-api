@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+
+
+  #  Adds in /api/vi to all routes within scope
   scope "/api/v1" do
     resources :tracks
     resources :tunings
