@@ -7,7 +7,7 @@ class TracksController < ApplicationController
 
 
     def index 
-        render json: Track.all
+        render json: Track.order(:artist)
     end
 
     def show 
